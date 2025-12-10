@@ -1,0 +1,15 @@
+    1  sudo apt update
+    2  sudo apt install -y build-essential gdb gcc-riscv64-unknown-elf qemu-system-misc
+    3  cd ~
+    4  git clone git://g.csail.mit.edu/xv6-labs-2023
+    5  cd xv6-labs-2023
+    6  make qemu
+    7  nano user/sleep.c
+    8  nano Makefile
+    9  make clean
+   10  make qemu
+   11  nano user/sleep.c
+   12  make clean
+   13  make qemu
+   14  ./grade-lab-util sleep
+   15  history > worksheet1.log
